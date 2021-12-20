@@ -18,7 +18,7 @@
         if ($rowcount != 0) {
             $sql = "UPDATE cookies SET cookies =".$cookies." WHERE store='".$store."' AND email='".$email."'";
         } else {
-            $sql = "INSERT INTO  cookies (store, email, date) VALUES ('" . $store . "', '" . $email . "','" . $cookies . "')";
+            $sql = "INSERT INTO  cookies (store, email, cookies) VALUES ('" . $store . "', '" . $email . "','" . $cookies . "')";
         }
     }
 
